@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_sheet"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:layout_height="wrap_content">
+<View
+    android:layout_gravity="center"
+    android:background="@drawable/adress_shape"
+    android:layout_width="100dp"
+    android:layout_height="10dp"
+    android:layout_marginTop="10dp"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Nhập địa chỉ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_phone"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:hint="Số điện thoại"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_marginTop="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_address"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_add_location_24"
+            android:hint="Địa chỉ giao hàng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cf_address"
+        android:textColor="@color/white"
+        android:text="Xác nhận"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_button"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
